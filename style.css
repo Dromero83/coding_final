@@ -7,7 +7,7 @@ body {
     height: 100vh;
     display: flex;
     color: beige;
-    background-color: pink;
+    background-image: linear-gradient(pink, hotpink);
 }
 
 .game {
@@ -48,7 +48,7 @@ body {
 }
 
 .backface {
-    background-color: gold;
+    background-color: rgb(240, 240, 136);
 }
 
 .frontface {
