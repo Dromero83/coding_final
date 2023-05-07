@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    height: 100vh;
     display: flex;
-    color: beige;
-    background-image: linear-gradient(pink, hotpink);
+    background-image: linear-gradient(rgb(255, 192, 195), rgb(255, 105, 113));
 }
 
 .game {
@@ -17,6 +15,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+}
+
+.switch {
+    padding: 20px;
+    font-size: 100px;
+    cursor: pointer;
 }
 
 .acard {
@@ -55,3 +59,10 @@ body {
  transform: rotateY(180deg);
     background-color: beige;
 }
+
+@media only screen and (max-width: 768px) {
+    .switch {
+      font-size: 50px;
+    }
+  }
+  

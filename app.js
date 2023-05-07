@@ -8,13 +8,11 @@ function flipCard() {
     if(lockBoard) return;
     if (this === firstCard) return;
     this.classList.toggle('flip');
-
     if (!hasFlippedCard) {
         hasFlippedCard = true
         firstCard = this;
     } else {
         secondCard = this;
-
         if(firstCard.dataset.framework === secondCard.dataset.framework) {
             firstCard.removeEventListener('click', flipCard);
             secondCard.removeEventListener('click', flipCard);
@@ -26,7 +24,6 @@ function flipCard() {
             secondCard.classList.remove('flip');
             resetBoard();
             }, 1000);
-
         }
     }
 }
@@ -44,4 +41,3 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
-
