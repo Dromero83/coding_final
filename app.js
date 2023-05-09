@@ -45,7 +45,6 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 var element = document.body;
 let img = document.getElementById("switchDay");
 
-
 function daySwitch() {
     element.classList.toggle("night");
     
@@ -54,4 +53,15 @@ function daySwitch() {
     } else {
        img = document.getElementById("switchDay").src="assets/moon.png";
    }
+
  }
+
+ function loadDoc() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+    xhttp.open("GET", "text.txt");
+    xhttp.send();
+  }
