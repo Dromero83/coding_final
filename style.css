@@ -4,8 +4,23 @@
     box-sizing: border-box;
 }
 body {
-    display: flex;
-    background-image: linear-gradient(rgb(255, 192, 195), rgb(255, 105, 113));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #7b0831;
+    background-image: linear-gradient(rgb(255, 248, 208), #ffe655);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.night {
+    color: #f0f8ff;
+    background-image: linear-gradient(rgb(18, 70, 138), rgb(22, 6, 58));
 }
 
 .game {
@@ -17,10 +32,14 @@ body {
     perspective: 1000px;
 }
 
-.switch {
-    padding: 20px;
-    font-size: 100px;
+.sun {
+    text-align: center;
+    padding: 5px;
     cursor: pointer;
+}
+
+.sun img {
+    height: 50px;
 }
 
 .acard {
@@ -29,6 +48,7 @@ body {
     margin: 5px;
     position: relative;
     transform: scale(1);
+    cursor: pointer;
     transform-style: preserve-3d;
     transition: transform .5s;
 }
@@ -52,7 +72,7 @@ body {
 }
 
 .backface {
-    background-color: rgb(240, 240, 136);
+    background-color: rgb(255, 165, 187);
 }
 
 .frontface {
@@ -61,8 +81,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .switch {
-      font-size: 50px;
+    .game {
+        width: 500px;
+        height: 500px;
     }
   }
   

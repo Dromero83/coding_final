@@ -41,3 +41,17 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+var element = document.body;
+let img = document.getElementById("switchDay");
+
+
+function daySwitch() {
+    element.classList.toggle("night");
+    
+    if (img === "assets/moon.png") {
+        img = document.getElementById("switchDay").src="assets/sun.png";
+    } else {
+       img = document.getElementById("switchDay").src="assets/moon.png";
+   }
+ }

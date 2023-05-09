@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Memory game</title>
+    <title>Memory</title>
 </head>
 <body>
-    <div class="switch">&#9728;&#65039;</div>
-    <div class="game">
+    <div class="intro">
+    <header>
+        <h1>Memory</h1>
+    </header>
+    <p>Click the cards to find the ones that match. Match them all to win.</p>
+    <p>click the sun to change the time of day.</p>
+        <div class="sun" onclick="daySwitch()">
+            <img id="switchDay" src="assets/sun.png">
+        </div>
+    </div>
+    <div class="game" >
         <div class="acard" data-framework="muffin">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-1.png">
@@ -18,48 +27,47 @@
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-1.png">
         </div>
-        <div class="acard" data-framework="amogus">
+        <div class="acard" data-framework="boba">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-2.png">
         </div>
-        <div class="acard" data-framework="amogus">
+        <div class="acard" data-framework="boba">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-2.png">
         </div>
-        <div class="acard"  data-framework="kette">
+        <div class="acard"  data-framework="milkshake">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-3.png">
         </div>
-        <div class="acard"  data-framework="kette">
+        <div class="acard"  data-framework="milkshake">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-3.png">
         </div>
-        <div class="acard"  data-framework="society">
+        <div class="acard"  data-framework="donut">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-4.png">
         </div>
-        <div class="acard"  data-framework="society">
+        <div class="acard"  data-framework="donut">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-4.png">
         </div>
-        <div class="acard"  data-framework="gene">
+        <div class="acard"  data-framework="macaron">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-5.png">
         </div>
-        <div class="acard"  data-framework="gene">
+        <div class="acard"  data-framework="macaron">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-5.png">
         </div>
-        <div class="acard"  data-framework="twotrucks">
+        <div class="acard"  data-framework="cupcake">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-6.png">
         </div>
-        <div class="acard"  data-framework="twotrucks">
+        <div class="acard"  data-framework="cupcake">
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-6.png">
         </div>
     </div>
-    <div class="switch">&#127769;</div>
     <script src="app.js"></script>
 </body>
 </html>
