@@ -1,1 +1,3 @@
-Thank you for playing my game!
+<p>Click the cards to find the ones that match.</p>
+<p>Match them all to win!</p>
+<p>Click the sun to change the time of day.</p>

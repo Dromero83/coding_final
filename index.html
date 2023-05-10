@@ -11,12 +11,12 @@
     <div class="texty">
     <header>
         <h1>Memory</h1>
-    </header>
-    <p>Click the cards to find the ones that match. Match them all to win.</p>
-    <p>click the sun to change the time of day.</p>
-        <div class="sun" onclick="daySwitch()">
+    <div class="sun" onclick="daySwitch()">
             <img id="switchDay" src="assets/sun.png">
         </div>
+    </header>
+    <p id="instructions">You're too cool for rules, right?</p>
+    <button type="button" onclick="read()">Read Rules</button>
     </div>
     <div class="game" >
         <div class="acard" data-framework="muffin">
@@ -67,10 +67,6 @@
             <img class="backface" src="assets/card-back.png">
             <img class="frontface" src="assets/card-6.png">
         </div>
-    </div>
-    <div class="texty">
-    <p>Click the button to read a special message</p>
-    <button type="button" onclick="loadDoc()">Change Content</button>
     </div>
 
     <script src="app.js"></script>

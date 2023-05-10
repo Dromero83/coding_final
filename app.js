@@ -54,14 +54,15 @@ function daySwitch() {
        img = document.getElementById("switchDay").src="assets/moon.png";
    }
 
+   
  }
 
- function loadDoc() {
+ function read() {
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
-      document.getElementById("demo").innerHTML =
+      document.getElementById("instructions").innerHTML =
       this.responseText;
     }
-    xhttp.open("GET", "text.txt");
+    xhttp.open('GET', 'text.txt');
     xhttp.send();
   }
