@@ -84,10 +84,6 @@ button {
     background-color: rgb(253, 182, 209);
 }
 
-.backnight {
-    background-color: rgb(252, 231, 175);
-}
-
 .frontface {
  transform: rotateY(180deg);
     background-color: beige;
